@@ -18,6 +18,8 @@
 		3870519428084AA700F323C1 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3870519328084AA700F323C1 /* Content.swift */; };
 		38705196280C332B00F323C1 /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38705195280C332B00F323C1 /* ContentCollectionViewCell.swift */; };
 		38705198280C360900F323C1 /* ContentCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38705197280C360900F323C1 /* ContentCollectionViewHeader.swift */; };
+		38CE9616281AB82200A9E935 /* ContentCollectionViewMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CE9615281AB82200A9E935 /* ContentCollectionViewMainCell.swift */; };
+		38CE9618281AC3E400A9E935 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CE9617281AC3E400A9E935 /* CustomUIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		3870519328084AA700F323C1 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		38705195280C332B00F323C1 /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		38705197280C360900F323C1 /* ContentCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewHeader.swift; sourceTree = "<group>"; };
+		38CE9615281AB82200A9E935 /* ContentCollectionViewMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewMainCell.swift; sourceTree = "<group>"; };
+		38CE9617281AC3E400A9E935 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +80,9 @@
 				3870519328084AA700F323C1 /* Content.swift */,
 				38705195280C332B00F323C1 /* ContentCollectionViewCell.swift */,
 				384CA551280D841C00C0C283 /* ContentCollectionViewRankCell.swift */,
+				38CE9617281AC3E400A9E935 /* CustomUIButton.swift */,
 				38705197280C360900F323C1 /* ContentCollectionViewHeader.swift */,
+				38CE9615281AB82200A9E935 /* ContentCollectionViewMainCell.swift */,
 			);
 			path = NetflixStyleSampleApp;
 			sourceTree = "<group>";
@@ -160,10 +166,12 @@
 			files = (
 				38705175280841CF00F323C1 /* AppDelegate.swift in Sources */,
 				38705198280C360900F323C1 /* ContentCollectionViewHeader.swift in Sources */,
+				38CE9618281AC3E400A9E935 /* CustomUIButton.swift in Sources */,
 				38705177280841CF00F323C1 /* SceneDelegate.swift in Sources */,
 				384CA552280D841C00C0C283 /* ContentCollectionViewRankCell.swift in Sources */,
 				387051892808426200F323C1 /* HomeViewController.swift in Sources */,
 				3870519428084AA700F323C1 /* Content.swift in Sources */,
+				38CE9616281AB82200A9E935 /* ContentCollectionViewMainCell.swift in Sources */,
 				38705196280C332B00F323C1 /* ContentCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
