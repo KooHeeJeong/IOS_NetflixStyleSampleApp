@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3806DF9F28476FCF0056E319 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DF9E28476FCF0056E319 /* ContentView.swift */; };
+		3806DFA1284775A30056E319 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3806DFA0284775A30056E319 /* ContentDetailView.swift */; };
 		384CA550280C3C1100C0C283 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 384CA54F280C3C1100C0C283 /* SnapKit */; };
 		384CA552280D841C00C0C283 /* ContentCollectionViewRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384CA551280D841C00C0C283 /* ContentCollectionViewRankCell.swift */; };
 		38705175280841CF00F323C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38705174280841CF00F323C1 /* AppDelegate.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3806DF9E28476FCF0056E319 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3806DFA0284775A30056E319 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		384CA551280D841C00C0C283 /* ContentCollectionViewRankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewRankCell.swift; sourceTree = "<group>"; };
 		38705171280841CF00F323C1 /* NetflixStyleSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixStyleSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38705174280841CF00F323C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		382E5D782848E895006A3273 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				387051882808426200F323C1 /* HomeViewController.swift */,
+				3870519328084AA700F323C1 /* Content.swift */,
+				38705195280C332B00F323C1 /* ContentCollectionViewCell.swift */,
+				384CA551280D841C00C0C283 /* ContentCollectionViewRankCell.swift */,
+				38CE9617281AC3E400A9E935 /* CustomUIButton.swift */,
+				38705197280C360900F323C1 /* ContentCollectionViewHeader.swift */,
+				38CE9615281AB82200A9E935 /* ContentCollectionViewMainCell.swift */,
+				3870518F28084A6400F323C1 /* Content.plist */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		38705168280841CF00F323C1 = {
 			isa = PBXGroup;
 			children = (
@@ -72,17 +91,12 @@
 			children = (
 				38705174280841CF00F323C1 /* AppDelegate.swift */,
 				38705176280841CF00F323C1 /* SceneDelegate.swift */,
+				3806DF9E28476FCF0056E319 /* ContentView.swift */,
+				3806DFA0284775A30056E319 /* ContentDetailView.swift */,
+				382E5D782848E895006A3273 /* New Group */,
 				3870517D280841D400F323C1 /* Assets.xcassets */,
 				3870517F280841D400F323C1 /* LaunchScreen.storyboard */,
 				38705182280841D400F323C1 /* Info.plist */,
-				387051882808426200F323C1 /* HomeViewController.swift */,
-				3870518F28084A6400F323C1 /* Content.plist */,
-				3870519328084AA700F323C1 /* Content.swift */,
-				38705195280C332B00F323C1 /* ContentCollectionViewCell.swift */,
-				384CA551280D841C00C0C283 /* ContentCollectionViewRankCell.swift */,
-				38CE9617281AC3E400A9E935 /* CustomUIButton.swift */,
-				38705197280C360900F323C1 /* ContentCollectionViewHeader.swift */,
-				38CE9615281AB82200A9E935 /* ContentCollectionViewMainCell.swift */,
 			);
 			path = NetflixStyleSampleApp;
 			sourceTree = "<group>";
@@ -165,11 +179,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				38705175280841CF00F323C1 /* AppDelegate.swift in Sources */,
+				3806DFA1284775A30056E319 /* ContentDetailView.swift in Sources */,
 				38705198280C360900F323C1 /* ContentCollectionViewHeader.swift in Sources */,
 				38CE9618281AC3E400A9E935 /* CustomUIButton.swift in Sources */,
 				38705177280841CF00F323C1 /* SceneDelegate.swift in Sources */,
 				384CA552280D841C00C0C283 /* ContentCollectionViewRankCell.swift in Sources */,
 				387051892808426200F323C1 /* HomeViewController.swift in Sources */,
+				3806DF9F28476FCF0056E319 /* ContentView.swift in Sources */,
 				3870519428084AA700F323C1 /* Content.swift in Sources */,
 				38CE9616281AB82200A9E935 /* ContentCollectionViewMainCell.swift in Sources */,
 				38705196280C332B00F323C1 /* ContentCollectionViewCell.swift in Sources */,

@@ -125,8 +125,14 @@ extension HomeViewController {
     
     //셀 선택
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let sectionName = contents[indexPath.section].sectionName
-        print("TEST: \(sectionName) 섹션의 \(indexPath.row + 1)번째 콘텐츠")
+        let isFirstSection = indexPath.section == 0
+        let selectedItem = isFirstSection
+        ? mainItem
+        : contents[indexPath.section].contentItem[indexPath.row]
+        
+        let contentDetailView = ContentDetailView(item: selectedItem)
+        let hostingVC = UIHostingController(rootView: contentDetailView)
+        self.show(hostingVC, sender: nil)
     }
     
     
@@ -245,22 +251,21 @@ extension HomeViewController {
 struct HomeViewController_Previews : PreviewProvider {
     static var previews: some View {
         Group {
-            Container().preferredColorScheme(.dark).edgesIgnoringSafeArea(.all)
-            Container().previewDevice("iPhone 12 mini").preferredColorScheme(.dark).edgesIgnoringSafeArea(.all)
+            HomeViewControllerRepresentable().preferredColorScheme(.dark).edgesIgnoringSafeArea(.all)
         }
+    }
+}
+
+struct HomeViewControllerRepresentable : UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> UIViewController {
+        let layout = UICollectionViewLayout()
+        let homeViewController = HomeViewController(collectionViewLayout: layout)
+        return UINavigationController(rootViewController: homeViewController)
     }
     
-    struct Container : UIViewControllerRepresentable {
-        func makeUIViewController(context: Context) -> UIViewController {
-            let layout = UICollectionViewLayout()
-            let homeViewController = HomeViewController(collectionViewLayout: layout)
-            return UINavigationController(rootViewController: homeViewController)
-        }
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
         
-        func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-            
-        }
-        
-        typealias UIViewControllerType = UIViewController
     }
+    
+    typealias UIViewControllerType = UIViewController
 }
